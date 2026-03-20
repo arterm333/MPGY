@@ -1,0 +1,6 @@
+# Git ignore для Playwright/Python
+venv/
+.env
+user_data/
+__pycache__/
+.pytest_cache/
