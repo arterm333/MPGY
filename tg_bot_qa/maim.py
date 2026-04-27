@@ -1,11 +1,14 @@
 import asyncio
 import os
+from pathlib import Path
 import requests
+from dotenv import load_dotenv
 
 from aiogram import Bot, Dispatcher, types  # pyright: ignore[reportMissingImports]
 from aiogram.filters import Command  # pyright: ignore[reportMissingImports]
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup  # pyright: ignore[reportMissingImports]
 
+load_dotenv(dotenv_path=Path(__file__).with_name(".env"))
 API_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 REPO_OWNER = os.getenv("REPO_OWNER")
@@ -63,9 +66,9 @@ async def run_tests(message: types.Message):
     else:
         await message.answer(f"❌ Ошибка запуска: {response.status_code}\n{response.text}")
 
-@dp.message(Command("run_dszn"))
-async def run_dszn_test(message: types.Message):
-    await message.answer("🚀 Запускаю специфический тест: dszn136200.py")
+@dp.message(Command("run_dszn_136200_test"))
+async def run_specific_test(message: types.Message):
+    await message.answer("🛠 Запускаю файл: Forms/dszn136200.py...")
 
     url = f"https://api.api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/actions/workflows/{WORKFLOW_ID}/dispatches"
     headers = {
