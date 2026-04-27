@@ -58,6 +58,31 @@ async def run_tests(message: types.Message):
     else:
         await message.answer(f"❌ Ошибка запуска: {response.status_code}\n{response.text}")
 
+@dp.message(Command("run_dszn"))
+async def run_dszn_test(message: types.Message):
+    await message.answer("🚀 Запускаю специфический тест: dszn136200.py")
+
+    url = f"https://api.api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/actions/workflows/{WORKFLOW_ID}/dispatches"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    
+    # Ключевой момент: добавляем словарь inputs
+    data = {
+        "ref": "main", 
+        "inputs": {
+            "test_file": "Forms/dszn136200.py" # Точный путь к файлу в репозитории
+        }
+    }
+
+    response = requests.post(url, headers=headers, json=data)
+    
+    if response.status_code == 204:
+        await message.answer("✅ GitHub принял задачу на конкретный тест.")
+    else:
+        await message.answer(f"❌ Ошибка: {response.status_code}")
+
 async def main():
     await dp.start_polling(bot)
 
