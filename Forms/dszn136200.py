@@ -43,13 +43,13 @@ def test_dszn136200_new_application_button(extension_browser):
         page.route("**/*", user_fl)
         page.goto(url, wait_until="domcontentloaded", timeout=60_000)
 
-    with allure.step('Проверить наличие кнопки "Новое заявление"'):
+    with allure.step('Проверить наличие кнопки "Продолжить"'):
         # Используем роль button и точное имя. Если у сайта окажется, что это link/другая роль,
         # скажи — адаптирую селектор.
-        new_app_button = page.get_by_role("button", name="Новое заявление")
+        new_app_button = page.get_by_role("button", name="Продолжить")
         expect(new_app_button).to_be_visible(timeout=15_000)
 
-    with allure.step('Проверить доступность кнопки "Новое заявление"'):
+    with allure.step('Проверить доступность кнопки "Продолжить"'):
         # Доступность считаем как "включена" (не disabled)
         expect(new_app_button).to_be_enabled()
 
