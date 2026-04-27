@@ -29,8 +29,9 @@ def extension_browser():
             args=[
                 f"--disable-extensions-except={ext_path}",
                 f"--load-extension={ext_path}",
-                "--no-sandbox", # Важно для работы в Docker/Linux контейнерах
-                "--disable-setuid-sandbox"
+                "--no-sandbox",              # Обязательно для CI
+                "--disable-setuid-sandbox",  # Обязательно для CI
+                "--disable-dev-shm-usage",   # Предотвращает нехватку памяти в контейнере
             ],
         )
 
