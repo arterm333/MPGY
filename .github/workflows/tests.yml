@@ -5,11 +5,11 @@ on:
   pull_request:
     branches: [ MPGY ]
   workflow_dispatch:      # ОБЯЗАТЕЛЬНО: эта строка разрешает запуск через API и бота
-    inputs:               # (Опционально) можно добавить параметры запуска
-      logLevel:
-        description: 'Log level'
-        required: false
-        default: 'warning'
+    inputs:
+      test_file: # Название параметра
+        description: 'Forms/dszn136200.py'
+        required: true
+        default: 'tests/'
 
 jobs:
   test:
@@ -24,6 +24,9 @@ jobs:
         run: |
           pip install -r requirements.txt
           playwright install --with-deps
+      - name: Run specific test
+        # Используем переменную из ввода в команде запуска
+        run: pytest ${{ github.event.inputs.test_file }}
       - name: Run tests
         run: python -m pytest --alluredir allure-results Forms/dszn136200.py  # Или ваша команда запуска
       - name: Send Telegram Notification
