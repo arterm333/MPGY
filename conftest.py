@@ -11,7 +11,7 @@ async def page():
     # 2. Запускаем движок Playwright
     async with async_playwright() as p:
         # 3. Сначала запускаем сам браузер
-        browser = await p.chromium.launch(headless=False)
+        browser = await p.chromium.launch(headless=True)
 
         # 4. Теперь создаем контекст с нужным User-Agent
         context = await browser.new_context(
