@@ -29,9 +29,14 @@ dp = Dispatcher()
 # Создаем удобные кнопки в интерфейсе
 kb = [
     [KeyboardButton(text="/run_smoke_tests")],
+    [KeyboardButton(text="/run_dszn_136200_test")],
     [KeyboardButton(text="/check_status")]
 ]
-keyboard = ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
+keyboard = ReplyKeyboardMarkup(
+    keyboard=kb, 
+    resize_keyboard=True,
+    input_field_placeholder="Выберите тест для запуска"
+)
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
