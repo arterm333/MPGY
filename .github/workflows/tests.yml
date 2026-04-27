@@ -1,0 +1,24 @@
+name: UI Autotests
+on:
+  workflow_dispatch: # Этот параметр позволяет запускать тесты вручную через API
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps
+      - name: Run tests
+        run: pytest  # Или ваша команда запуска
+      - name: Send Telegram Notification
+        if: always() # Выполнять даже если тесты упали
+        run: |
+          curl -X POST "https://api.telegram.org/bot${{ secrets.8360653159:AAEtsQkTW6FOS-F7T2pBPlOXVpUmHXaVk8A}}/sendMessage" \
+          -d "chat_id=${{ secrets.8360653159}}&text=📊 Тесты завершены! Проверь отчет в GitHub Actions."

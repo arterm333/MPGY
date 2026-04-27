@@ -7,9 +7,9 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup  # pyright: ignore
 
 # Вставьте сюда токен, который дал BotFather
 API_TOKEN = '8360653159:AAEtsQkTW6FOS-F7T2pBPlOXVpUmHXaVk8A'
-GITHUB_TOKEN = 'ВАШ_GITHUB_TOKEN'
-REPO_OWNER = 'ВАШ_LOGИН_GITHUB'
-REPO_NAME = 'НАЗВАНИЕ_РЕПОЗИТОРИЯ'
+GITHUB_TOKEN = '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'
+REPO_OWNER = 'arterm333'
+REPO_NAME = 'MPGY'
 WORKFLOW_ID = 'tests.yml'
 
 bot = Bot(token=API_TOKEN)
