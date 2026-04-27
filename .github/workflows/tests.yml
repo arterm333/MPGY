@@ -5,11 +5,11 @@ on:
   pull_request:
     branches: [ MPGY ]
   workflow_dispatch:      # ОБЯЗАТЕЛЬНО: эта строка разрешает запуск через API и бота
-    inputs:               # (Опционально) можно добавить параметры запуска
-      logLevel:
-        description: 'Log level'
-        required: false
-        default: 'warning'
+    inputs:
+      test_file:
+        description: 'Forms/dszn136200.py'
+        required: true
+        default: 'test1/' # Папка по умолчанию, если ничего не введено
 
 jobs:
   test:
@@ -25,7 +25,7 @@ jobs:
           pip install -r requirements.txt
           playwright install --with-deps
       - name: Run tests
-        run: pytest  # Или ваша команда запуска
+        run: pytest ${{ github.event.inputs.test_file }}  # Или ваша команда запуска
       - name: Send Telegram Notification
         if: always()
         env:
@@ -34,4 +34,4 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
           curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-          -d "chat_id=${TELEGRAM_CHAT_ID}&text=📊 Тесты завершены! Проверь отчет в GitHub Actions."
+          -d "chat_id=${TELEGRAM_CHAT_ID}&text=📊 Тесты окончены! Проверь отчет в GitHub Actions."
