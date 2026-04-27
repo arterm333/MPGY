@@ -1,0 +1,1 @@
+(async()=>{await import(chrome.runtime.getURL("assets/src/js/service/content_script_vite-c387a50d.js"))})();

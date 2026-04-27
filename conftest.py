@@ -1,10 +1,41 @@
 import pytest
+import os
 import nest_asyncio
 from playwright.async_api import async_playwright
+from playwright.sync_api import sync_playwright
 
 # 1. Применяем патч для Windows сразу
 nest_asyncio.apply()
 
+@pytest.fixture(scope="session")
+def extension_browser():
+    with sync_playwright() as p:
+        # 1) Динамический путь: берем корень проекта, где бы он ни лежал
+        # os.getcwd() вернет путь к папке, из которой запущен pytest
+        root_dir = os.getcwd()
+        
+        # Укажите путь к папке расширения внутри вашего репозитория
+        ext_path = os.path.join(root_dir, "my_extension")
+
+        # 2) Директория под временные данные (тоже в корне проекта)
+        user_data_dir = os.path.join(root_dir, "user_data_temp")
+
+        # 3) Запуск
+        # headless=False ОБЯЗАТЕЛЕН для расширений, 
+        # поэтому в GitHub Actions мы будем использовать xvfb-run
+        context = p.chromium.launch_persistent_context(
+            user_data_dir,
+            headless=False, 
+            args=[
+                f"--disable-extensions-except={ext_path}",
+                f"--load-extension={ext_path}",
+                "--no-sandbox", # Важно для работы в Docker/Linux контейнерах
+                "--disable-setuid-sandbox"
+            ],
+        )
+
+        yield context
+        context.close()
 
 @pytest.fixture(scope="function")
 async def page():

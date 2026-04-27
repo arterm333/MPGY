@@ -70,7 +70,7 @@ async def run_tests(message: types.Message):
 async def run_specific_test(message: types.Message):
     await message.answer("🛠 Запускаю файл: Forms/dszn136200.py...")
 
-    url = f"https://api.api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/actions/workflows/{WORKFLOW_ID}/dispatches"
+    url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/actions/workflows/{WORKFLOW_ID}/dispatches"
     headers = {
         "Authorization": f"token {GITHUB_TOKEN}",
         "Accept": "application/vnd.github.v3+json"

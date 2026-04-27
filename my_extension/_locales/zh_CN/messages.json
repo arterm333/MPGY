@@ -1,0 +1,359 @@
+{
+   "all_copy_enable_toast": {
+      "message": "已解除网页复制限制,可以从网页中任意复制!"
+   },
+   "allow_content_edit": {
+      "message": "编辑网页内容"
+   },
+   "allow_copy": {
+      "message": "允许网页复制"
+   },
+   "allow_image": {
+      "message": "启用图片"
+   },
+   "apple_for_require_permissions_title": {
+      "message": "使用此功能需要申请临时权限"
+   },
+   "beautify_scrollbar": {
+      "message": "美化滚动条"
+   },
+   "block_cookie": {
+      "message": "禁用cookie"
+   },
+   "block_css": {
+      "message": "禁用样式"
+   },
+   "block_image": {
+      "message": "禁用图片"
+   },
+   "browserData_permissions_illustrate": {
+      "message": "使用此功能需要申请browserData临时权限来清理浏览器缓存，您选择启用功能按钮，插件将向浏览器申请browserData权限，您同意权限后插件将帮您清理相关网站缓存数据"
+   },
+   "cache_clear": {
+      "message": "清理缓存"
+   },
+   "can_be_open_on_settings": {
+      "message": "(可在设置中开启)"
+   },
+   "cancel": {
+      "message": "取消"
+   },
+   "clean": {
+      "message": "清理"
+   },
+   "clean_all_website": {
+      "message": "清理所有网站"
+   },
+   "clean_current_website": {
+      "message": "清理当前网站"
+   },
+   "clean_success": {
+      "message": "清理成功！"
+   },
+   "clear": {
+      "message": "清除"
+   },
+   "clear_cache_auto_refresh_page": {
+      "message": "清除缓存后自动刷新页面"
+   },
+   "clear_cache_not_open_settings": {
+      "message": "下次点击直接按照当前设置清理缓存，默认不再打开设置页面"
+   },
+   "close": {
+      "message": "关闭"
+   },
+   "close_suspend_btn_list_title": {
+      "message": "已关闭浮窗球网站列表"
+   },
+   "color_picker": {
+      "message": "取色器"
+   },
+   "color_picker_title": {
+      "message": "ModHeader 取色器"
+   },
+   "confirm": {
+      "message": "确定"
+   },
+   "contentSettings_permissions_illustrate": {
+      "message": "使用此功能需要申请contentSettings权限来控制cookies,图片，javascript，地理位置，麦克风，相机等功能在特定网站上的启用和禁用,并不会打开麦克风和摄像头等产生隐私风险，您选择启用功能按钮，插件将向浏览器申请contentSettings权限，您同意权限后插件将帮您控制每个网站的cookie，图片和javascript等的启用和禁用"
+   },
+   "copy_header": {
+      "message": "复制请求头"
+   },
+   "copy_header_error": {
+      "message": "复制header出错，请求刷新网页后重试！"
+   },
+   "copy_success": {
+      "message": "复制成功"
+   },
+   "current_domain_close": {
+      "message": "当前域名不显示悬浮球"
+   },
+   "default_scrollbar": {
+      "message": "恢复默认滚动条"
+   },
+   "delete_url_params": {
+      "message": "删除URL参数"
+   },
+   "disable_javascript": {
+      "message": "禁用javascript"
+   },
+   "disable_network_type_introduce": {
+      "message": "点击复选框禁用当前域名下面的选定的网络类型的网络请求,网络类型前面的数字代表当前网页已发起了多少个此类型的网络请求，如果要彻底禁用图片或JS请使用便捷工具里面的禁用图片和禁用JS功能,因为这里不能禁止HTML内部包含的图片和JS,此功能也不能禁用浏览器已缓存资源,如果禁用失败请打开开发者控制台在网络标签选择'停用缓存'"
+   },
+   "disable_the_hover_ball_tool": {
+      "message": "关闭悬浮球工具"
+   },
+   "disables_network_requests_for_the_current_domain": {
+      "message": "禁用当前域名网络请求"
+   },
+   "dns_resolution_time": {
+      "message": "DNS解析时间"
+   },
+   "download": {
+      "message": "下载"
+   },
+   "download_image": {
+      "message": "下载图片"
+   },
+   "edit_page_enable_toast": {
+      "message": "已进入网页编辑模式,请使用鼠标选择元素进行编辑,复制,剪切,删除等操作"
+   },
+   "enable_cookie": {
+      "message": "启用cookie"
+   },
+   "enable_css": {
+      "message": "启用样式"
+   },
+   "enable_function_btn": {
+      "message": "启用功能"
+   },
+   "enable_javascript": {
+      "message": "启用javascript"
+   },
+   "enable_the_hover_ball_tool": {
+      "message": "启用悬浮球工具"
+   },
+   "enable_the_hoverball": {
+      "message": "启用悬浮球"
+   },
+   "everything": {
+      "message": "时间不限"
+   },
+   "exit_content_edit": {
+      "message": "退出编辑"
+   },
+   "export_svg": {
+      "message": "导出网页SVG"
+   },
+   "export_svg_ing": {
+      "message": "正在提取svg中"
+   },
+   "export_svg_title": {
+      "message": "导出网页SVG"
+   },
+   "failed_request": {
+      "message": "失败请求"
+   },
+   "hoverball_settings": {
+      "message": "悬浮球设置"
+   },
+   "last_day": {
+      "message": "过去24小时"
+   },
+   "last_hour": {
+      "message": "过去1小时"
+   },
+   "last_month": {
+      "message": "过去1月"
+   },
+   "last_three_day": {
+      "message": "过去3天"
+   },
+   "last_week": {
+      "message": "过去7天"
+   },
+   "list_of_domain_names_for_network_requests": {
+      "message": "网络请求域名列表"
+   },
+   "list_of_network_request_status_codes": {
+      "message": "网络请求状态码列表"
+   },
+   "logo_img_show": {
+      "message": "LOGO图标显示"
+   },
+   "memory_btn_tooltip": {
+      "message": "网页内存占用"
+   },
+   "memory_count_diff_msg_1": {
+      "message": "浏览器统计标签页内存占用，插件统计的是网页JS堆栈内存占用"
+   },
+   "memory_count_diff_msg_2": {
+      "message": "插件会将iframe占用内存区分计算显示"
+   },
+   "memory_count_diff_msg_3": {
+      "message": "浏览器内存统计更新非常慢,插件的更新频率特快,可以在设置中启用内存悬浮球显示(推荐)，实时查看网页内存占用"
+   },
+   "memory_count_diff_text": {
+      "message": "和浏览器内存统计的区别?"
+   },
+   "modHeader_rule_error": {
+      "message": "配置文件申明规则错误"
+   },
+   "non_200_requests": {
+      "message": "非200请求"
+   },
+   "not_enable_function_btn": {
+      "message": "暂不启用"
+   },
+   "only_global_clear_msg": {
+      "message": "不支持针对某个单独的域名进行清理"
+   },
+   "only_one_disable_hoverball": {
+      "message": "隐藏直到下次访问"
+   },
+   "page_memory_used_show": {
+      "message": "网页内存占用🔥"
+   },
+   "page_zoom": {
+      "message": "界面缩放比例"
+   },
+   "permanently_closed": {
+      "message": "永久关闭"
+   },
+   "picker_color_btn": {
+      "message": "拾取颜色"
+   },
+   "please_select_clean_type": {
+      "message": "请选择需要清理的类型!"
+   },
+   "qrcode_visit": {
+      "message": "二维码访问"
+   },
+   "re_enable_in_settings": {
+      "message": "您可以在设置中重新启用"
+   },
+   "recent_colors": {
+      "message": "历史颜色"
+   },
+   "refresh_page_enable": {
+      "message": "刷新网页生效"
+   },
+   "regenerate": {
+      "message": "重新生成"
+   },
+   "request_statistics": {
+      "message": "请求统计信息"
+   },
+   "reverse_select": {
+      "message": "反选"
+   },
+   "rule_success": {
+      "message": "配置文件合法!"
+   },
+   "see_and_copy_style": {
+      "message": "查看复制样式"
+   },
+   "select_all": {
+      "message": "全选"
+   },
+   "select_clean_cache_time": {
+      "message": "选择清理时间"
+   },
+   "select_clean_cache_type": {
+      "message": "选择需要清理的缓存类型"
+   },
+   "select_cleanup_range": {
+      "message": "选择清理范围"
+   },
+   "select_color": {
+      "message": "选中颜色"
+   },
+   "settings": {
+      "message": "设置"
+   },
+   "show_style_view_toast": {
+      "message": "当前已进入元素选择模式，可使用ESC退出，对于无法点击选中的元素可以鼠标hover元素后使用Enter键选择元素"
+   },
+   "show_web_ruler_toast": {
+      "message": "鼠标点击选择一个元素,然后鼠标hover另一个元素可以查看两个元素之间的距离！"
+   },
+   "start_clean": {
+      "message": "开始清理"
+   },
+   "style_help_a_z_desc": {
+      "message": "可键盘直接输入css属性和值到元素"
+   },
+   "style_help_backspace": {
+      "message": "使用回退键删除已输入属性或值"
+   },
+   "style_help_ctrl_c": {
+      "message": "使用Ctrl + C直接复制元素样式"
+   },
+   "style_help_delete": {
+      "message": "使用删除键直接删除当前行输入"
+   },
+   "style_help_tab_enter": {
+      "message": "使用TAB或回车键确认属性"
+   },
+   "style_help_up_down": {
+      "message": "使用上下方向键选择属性"
+   },
+   "style_view_bottom_tooltip_text": {
+      "message": "使用Ctrl + H查看帮助 Ctrl + C复制样式"
+   },
+   "sub_frame_memory_usage": {
+      "message": "子网页内存占用"
+   },
+   "sub_frame_strage_usage": {
+      "message": "子网页存储占用"
+   },
+   "successful_request": {
+      "message": "成功请求"
+   },
+   "suspend_button_show_style": {
+      "message": "悬浮球显示样式"
+   },
+   "tcp_connection_time": {
+      "message": "TCP连接时间"
+   },
+   "the_number_of_dom_nodes_of_the_web_page": {
+      "message": "网页节点数量"
+   },
+   "the_request_takes_time": {
+      "message": "请求耗时"
+   },
+   "tool_title": {
+      "message": "便捷工具 🔥"
+   },
+   "total_number_of_requests": {
+      "message": "总请求数"
+   },
+   "view_style_add_css_property_tooltip_text": {
+      "message": "可键盘直接输入css属性追加到元素上"
+   },
+   "web_page_load_time": {
+      "message": "网页加载时间"
+   },
+   "web_page_memory_usage": {
+      "message": "网页内存占用"
+   },
+   "web_page_statistics": {
+      "message": "网页统计信息"
+   },
+   "web_page_storage_usage": {
+      "message": "网页存储占用"
+   },
+   "web_ruler": {
+      "message": "网页标尺"
+   },
+   "website_dom_node_information": {
+      "message": "网站DOM节点信息"
+   },
+   "website_requests_analytics_details": {
+      "message": "网站请求分析详情"
+   },
+   "website_response_header_security_analysis": {
+      "message": "网站响应头安全性分析"
+   }
+}

@@ -1,0 +1,359 @@
+{
+   "all_copy_enable_toast": {
+      "message": "Web page copy restrictions have been lifted; you can now copy freely from the page!"
+   },
+   "allow_content_edit": {
+      "message": "Edit Page Content"
+   },
+   "allow_copy": {
+      "message": "Allow Copy"
+   },
+   "allow_image": {
+      "message": "Allow Image"
+   },
+   "apple_for_require_permissions_title": {
+      "message": "Temporary permissions are required to use this feature."
+   },
+   "beautify_scrollbar": {
+      "message": "Beautify Scrollbar"
+   },
+   "block_cookie": {
+      "message": "Block Cookie"
+   },
+   "block_css": {
+      "message": "Block CSS"
+   },
+   "block_image": {
+      "message": "Block Image"
+   },
+   "browserData_permissions_illustrate": {
+      "message": "To use this feature, it is necessary to request temporary \"browserData\" permissions to clear the browser cache. By selecting the \"Enable Feature\" button, the extension will request browserData permissions from the browser. Once you grant these permissions, the extension will assist you in clearing the cache data associated with specific websites."
+   },
+   "cache_clear": {
+      "message": "Cache Clear"
+   },
+   "can_be_open_on_settings": {
+      "message": "(This can be turned on in the settings)"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "clean": {
+      "message": "Clean"
+   },
+   "clean_all_website": {
+      "message": "Clear All Sites"
+   },
+   "clean_current_website": {
+      "message": "Clear Current Site"
+   },
+   "clean_success": {
+      "message": "Cleanup successful!"
+   },
+   "clear": {
+      "message": "CLEAR"
+   },
+   "clear_cache_auto_refresh_page": {
+      "message": "Automatically reload active tab after clearing data"
+   },
+   "clear_cache_not_open_settings": {
+      "message": "Click to clear cache with current settings and skip opening settings by default next time."
+   },
+   "close": {
+      "message": "Close"
+   },
+   "close_suspend_btn_list_title": {
+      "message": "Closed floating ball website list"
+   },
+   "color_picker": {
+      "message": "Color Picker"
+   },
+   "color_picker_title": {
+      "message": "ModHeader Color Picker"
+   },
+   "confirm": {
+      "message": "Confirm"
+   },
+   "contentSettings_permissions_illustrate": {
+      "message": "To use this feature, you must grant contentSettings permission to toggle cookies, images, JavaScript, geolocation, and access to the microphone and camera for individual sites. This action will not activate microphones or cameras, ensuring no privacy risks. By enabling the feature below, you allow the plugin to request contentSettings permission. Once authorized, it will manage the activation and deactivation of cookies, images, and JavaScript on each website."
+   },
+   "copy_header": {
+      "message": "Copy Header"
+   },
+   "copy_header_error": {
+      "message": "Failed to copy the header. Please refresh the page and try again!"
+   },
+   "copy_success": {
+      "message": "Copy Success"
+   },
+   "current_domain_close": {
+      "message": "Disable The Current Domain"
+   },
+   "default_scrollbar": {
+      "message": "Restore Default Scrollbar"
+   },
+   "delete_url_params": {
+      "message": "Delete URL Params"
+   },
+   "disable_javascript": {
+      "message": "Disable Javascript"
+   },
+   "disable_network_type_introduce": {
+      "message": "By clicking on the checkbox, you can disable network requests of the specified types for the current domain. The number preceding the network type indicates how many requests of this type have already been initiated by the current webpage. To fully disable images or JavaScript, please use the \"Disable Images\" and \"Disable JavaScript\" features found in the convenient tools section, as this function does not block images and JavaScript that are embedded within the HTML itself. Moreover, this feature does not prevent the browser from utilizing resources already cached. If disabling is unsuccessful, please open the developer console, navigate to the Network tab, and select 'Disable cache'."
+   },
+   "disable_the_hover_ball_tool": {
+      "message": "Hidden Floating Ball Helper"
+   },
+   "disables_network_requests_for_the_current_domain": {
+      "message": "Block Net Requests For Current Domain"
+   },
+   "dns_resolution_time": {
+      "message": "DNS Resolution Time"
+   },
+   "download": {
+      "message": "Download"
+   },
+   "download_image": {
+      "message": "Download Image"
+   },
+   "edit_page_enable_toast": {
+      "message": "You've entered webpage editing mode; use the mouse to select elements for editing, copying, cutting, deleting, and other actions."
+   },
+   "enable_cookie": {
+      "message": "Allow Cookie"
+   },
+   "enable_css": {
+      "message": "Allow CSS"
+   },
+   "enable_function_btn": {
+      "message": "Enable the feature"
+   },
+   "enable_javascript": {
+      "message": "Enable Javascript"
+   },
+   "enable_the_hover_ball_tool": {
+      "message": "Show Floating Ball Helper"
+   },
+   "enable_the_hoverball": {
+      "message": "Enable Floating Ball"
+   },
+   "everything": {
+      "message": "Everything"
+   },
+   "exit_content_edit": {
+      "message": "Exit Editing"
+   },
+   "export_svg": {
+      "message": "Export Page SVG"
+   },
+   "export_svg_ing": {
+      "message": "Svg is being extracted"
+   },
+   "export_svg_title": {
+      "message": "Export SVG"
+   },
+   "failed_request": {
+      "message": "Failed Request"
+   },
+   "hoverball_settings": {
+      "message": "Floating Ball Settings"
+   },
+   "last_day": {
+      "message": "Last Day"
+   },
+   "last_hour": {
+      "message": "Last Hour"
+   },
+   "last_month": {
+      "message": "Last Month"
+   },
+   "last_three_day": {
+      "message": "Last Three Day"
+   },
+   "last_week": {
+      "message": "Last Week"
+   },
+   "list_of_domain_names_for_network_requests": {
+      "message": "Requests Domain List"
+   },
+   "list_of_network_request_status_codes": {
+      "message": "Requests Status Codes"
+   },
+   "logo_img_show": {
+      "message": "LOGO icon display"
+   },
+   "memory_btn_tooltip": {
+      "message": "page memory usage"
+   },
+   "memory_count_diff_msg_1": {
+      "message": "The browser tracks the memory usage of each tab, while the plugin measures the JavaScript heap memory used by the webpages."
+   },
+   "memory_count_diff_msg_2": {
+      "message": "The plugin calculates and displays the memory usage of iframes separately."
+   },
+   "memory_count_diff_msg_3": {
+      "message": "The browser's memory statistics update quite slowly, whereas the plugin updates at a much higher frequency. It is recommended to enable the Memory Floating Ball display in the settings for real-time monitoring of webpage memory usage."
+   },
+   "memory_count_diff_text": {
+      "message": "What's the difference from the browser's memory profiling?"
+   },
+   "modHeader_rule_error": {
+      "message": "The configuration file contains an invalid declaration rule."
+   },
+   "non_200_requests": {
+      "message": "Non200 Requests"
+   },
+   "not_enable_function_btn": {
+      "message": "Not enabled"
+   },
+   "only_global_clear_msg": {
+      "message": "Does not support clearing data for an individual domain."
+   },
+   "only_one_disable_hoverball": {
+      "message": "Hide until next visit"
+   },
+   "page_memory_used_show": {
+      "message": "Web page memory usage🔥"
+   },
+   "page_zoom": {
+      "message": "UI scale factor"
+   },
+   "permanently_closed": {
+      "message": "Permanently Closed"
+   },
+   "picker_color_btn": {
+      "message": "PICK COLOR"
+   },
+   "please_select_clean_type": {
+      "message": "Please choose the cleanup category!"
+   },
+   "qrcode_visit": {
+      "message": "QR Code Generator"
+   },
+   "re_enable_in_settings": {
+      "message": "You can re-enable in Settings"
+   },
+   "recent_colors": {
+      "message": "RECENT COLORS"
+   },
+   "refresh_page_enable": {
+      "message": "Refresh Required"
+   },
+   "regenerate": {
+      "message": "Rebuild"
+   },
+   "request_statistics": {
+      "message": "Request Statistics"
+   },
+   "reverse_select": {
+      "message": "Reverse Select"
+   },
+   "rule_success": {
+      "message": "The configuration file is success."
+   },
+   "see_and_copy_style": {
+      "message": "View copy styles"
+   },
+   "select_all": {
+      "message": "Select All"
+   },
+   "select_clean_cache_time": {
+      "message": "Select Clearing Time"
+   },
+   "select_clean_cache_type": {
+      "message": "Select Cache Types to Clear"
+   },
+   "select_cleanup_range": {
+      "message": "Select Clean Range"
+   },
+   "select_color": {
+      "message": "SELECTED COLOR"
+   },
+   "settings": {
+      "message": "Settings"
+   },
+   "show_style_view_toast": {
+      "message": "You're currently in element selection mode. Press ESC to exit, or hover over an element and press Enter to select elements that can't be clicked."
+   },
+   "show_web_ruler_toast": {
+      "message": "Click to select an element, then hover over another to see the distance between them!"
+   },
+   "start_clean": {
+      "message": "Start Cleaning"
+   },
+   "style_help_a_z_desc": {
+      "message": "Directly type CSS properties and values into an element using the keyboard."
+   },
+   "style_help_backspace": {
+      "message": "Hit backspace to erase the typed-in property or value."
+   },
+   "style_help_ctrl_c": {
+      "message": "Use \"Ctrl + C\" to directly copy the element's style."
+   },
+   "style_help_delete": {
+      "message": "Use the Delete key to remove the current line entry."
+   },
+   "style_help_tab_enter": {
+      "message": "Confirm the property by pressing TAB or the Enter key."
+   },
+   "style_help_up_down": {
+      "message": "Use the up and down arrow keys to select an attribute."
+   },
+   "style_view_bottom_tooltip_text": {
+      "message": "Press \"Ctrl + H\" to view help, and \"Ctrl + C\" to copy styles."
+   },
+   "sub_frame_memory_usage": {
+      "message": "Sub Frame Memory Usage"
+   },
+   "sub_frame_strage_usage": {
+      "message": "Sub frame storage usage"
+   },
+   "successful_request": {
+      "message": "Success Request"
+   },
+   "suspend_button_show_style": {
+      "message": "Floating ball display styles"
+   },
+   "tcp_connection_time": {
+      "message": "TCP Connection Time"
+   },
+   "the_number_of_dom_nodes_of_the_web_page": {
+      "message": "Page Nodes Number"
+   },
+   "the_request_takes_time": {
+      "message": "Request Takes Time"
+   },
+   "tool_title": {
+      "message": "Convenient Tools 🔥"
+   },
+   "total_number_of_requests": {
+      "message": "Total Requests"
+   },
+   "view_style_add_css_property_tooltip_text": {
+      "message": "You can directly append CSS properties to an element via keyboard input!"
+   },
+   "web_page_load_time": {
+      "message": "Page Load Time"
+   },
+   "web_page_memory_usage": {
+      "message": "Page Memory Usage"
+   },
+   "web_page_statistics": {
+      "message": "Web Page Statistics"
+   },
+   "web_page_storage_usage": {
+      "message": "Web storage usage"
+   },
+   "web_ruler": {
+      "message": "Web Ruler"
+   },
+   "website_dom_node_information": {
+      "message": "Website Dom Node Information"
+   },
+   "website_requests_analytics_details": {
+      "message": "Website Requests Analytics Details"
+   },
+   "website_response_header_security_analysis": {
+      "message": "Website Response Header Security Analysis"
+   }
+}
