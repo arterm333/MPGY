@@ -44,22 +44,30 @@ async def cmd_start(message: types.Message):
     )
 
 @dp.message(Command("run_smoke_tests"))
-async def run_tests(message: types.Message):
-    await message.answer("🚀 Посылаю сигнал на GitHub Actions...")
+async def run_specific_test(message: types.Message):
+    await message.answer(f"🚀 Запускаю тест: dszn136200.py...")
 
     url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/actions/workflows/{WORKFLOW_ID}/dispatches"
+    
     headers = {
         "Authorization": f"token {GITHUB_TOKEN}",
         "Accept": "application/vnd.github.v3+json"
     }
-    data = {"ref": WORKFLOW_REF} # Ветка, из которой запускаем тесты
+    
+    # Передаем путь к файлу в блоке inputs
+    data = {
+        "ref": "main",
+        "inputs": {
+            "test_file": "Forms/dszn136200.py" # Указываем путь к вашему файлу
+        }
+    }
 
     response = requests.post(url, headers=headers, json=data)
-
+    
     if response.status_code == 204:
-        await message.answer("✅ Пайплайн запущен! Результаты придут через пару минут.")
+        await message.answer("✅ Запрос принят GitHub. Тест пошел!")
     else:
-        await message.answer(f"❌ Ошибка запуска: {response.status_code}\n{response.text}")
+        await message.answer(f"❌ Ошибка: {response.status_code}")
 
 async def main():
     await dp.start_polling(bot)
