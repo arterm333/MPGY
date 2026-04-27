@@ -38,7 +38,7 @@ async def run_tests(message: types.Message):
         "Authorization": f"token {GITHUB_TOKEN}",
         "Accept": "application/vnd.github.v3+json"
     }
-    data = {"ref": "main"} # Ветка, из которой запускаем тесты
+    data = {"ref": "dszn-user-data"} # Ветка, из которой запускаем тесты
 
     response = requests.post(url, headers=headers, json=data)
 
