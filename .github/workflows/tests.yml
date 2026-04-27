@@ -25,12 +25,9 @@ jobs:
           pip install -r requirements.txt
           playwright install --with-deps
       - name: Run tests
-        run: pytest  # Или ваша команда запуска
+        run: python -m pytest --alluredir allure-results Forms/dszn136200.py  # Или ваша команда запуска
       - name: Send Telegram Notification
         if: always() # Выполнять даже если тесты упали
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          curl -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-          -d "chat_id=${TELEGRAM_CHAT_ID}&text=📊 Тесты завершены! Проверь отчет в GitHub Actions."
+          curl -X POST "https://api.telegram.org/bot${{ secrets.8360653159:AAEtsQkTW6FOS-F7T2pBPlOXVpUmHXaVk8A}}/sendMessage" \
+          -d "chat_id=${{ secrets.8360653159}}&text=📊 Тесты завершены! Проверь отчет в GitHub Actions."
