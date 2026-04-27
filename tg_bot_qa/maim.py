@@ -1,16 +1,27 @@
 import asyncio
+import os
 import requests
 
 from aiogram import Bot, Dispatcher, types  # pyright: ignore[reportMissingImports]
 from aiogram.filters import Command  # pyright: ignore[reportMissingImports]
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup  # pyright: ignore[reportMissingImports]
 
-# Вставьте сюда токен, который дал BotFather
-API_TOKEN = '8360653159:AAEtsQkTW6FOS-F7T2pBPlOXVpUmHXaVk8A'
-GITHUB_TOKEN = 'ВАШ_GITHUB_TOKEN'
-REPO_OWNER = 'ВАШ_LOGИН_GITHUB'
-REPO_NAME = 'НАЗВАНИЕ_РЕПОЗИТОРИЯ'
-WORKFLOW_ID = 'tests.yml'
+API_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+REPO_OWNER = os.getenv("REPO_OWNER")
+REPO_NAME = os.getenv("REPO_NAME")
+WORKFLOW_ID = os.getenv("WORKFLOW_ID", "tests.yml")
+WORKFLOW_REF = os.getenv("WORKFLOW_REF", "main")
+
+required_vars = {
+    "TELEGRAM_BOT_TOKEN": API_TOKEN,
+    "GITHUB_TOKEN": GITHUB_TOKEN,
+    "REPO_OWNER": REPO_OWNER,
+    "REPO_NAME": REPO_NAME,
+}
+missing_vars = [name for name, value in required_vars.items() if not value]
+if missing_vars:
+    raise RuntimeError(f"Missing required environment variables: {', '.join(missing_vars)}")
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
@@ -38,7 +49,7 @@ async def run_tests(message: types.Message):
         "Authorization": f"token {GITHUB_TOKEN}",
         "Accept": "application/vnd.github.v3+json"
     }
-    data = {"ref": "main"} # Ветка, из которой запускаем тесты
+    data = {"ref": WORKFLOW_REF} # Ветка, из которой запускаем тесты
 
     response = requests.post(url, headers=headers, json=data)
 
