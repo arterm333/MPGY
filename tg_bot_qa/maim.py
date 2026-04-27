@@ -1,11 +1,14 @@
 import asyncio
 import os
+from pathlib import Path
+from dotenv import load_dotenv
 import requests
 
 from aiogram import Bot, Dispatcher, types  # pyright: ignore[reportMissingImports]
 from aiogram.filters import Command  # pyright: ignore[reportMissingImports]
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup  # pyright: ignore[reportMissingImports]
 
+load_dotenv(dotenv_path=Path(__file__).with_name(".env"))
 API_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 REPO_OWNER = os.getenv("REPO_OWNER")
